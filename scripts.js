@@ -46,8 +46,8 @@ var BlogView = Backbone.View.extend({
     edit: function() {
         $('.edit-blog').hide();
         $('.delete-blog').hide();
-        $('.update-blog').show();
-        $('.cancel').show();
+        this.$('.update-blog').show();
+        this.$('.cancel').show();
 
         var author = this.$('td:first-child').html();
         var title = this.$('td:nth-child(2)').html();
